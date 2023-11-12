@@ -1,17 +1,33 @@
 import { Box, Button, createTheme } from "@mui/material";
 import "./App.css";
-import About from "./components/About";
-import Hero from "./components/Hero";
-import Navbar from "./components/Navbar";
 import { getDesignTokens } from "./theme";
 import { ThemeProvider } from "@mui/material/styles";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import { useEffect, useMemo, useState } from "react";
-import Footer from "./components/Footer";
-import Contact from "./components/Contact";
-import Experiance from "./components/Experiance/Experiance";
-import Skills from "./components/Skills";
+import React, { useEffect, useMemo, useState } from "react";
+
+// Low Performance
+
+// import About from "./components/About";
+// import Hero from "./components/Hero";
+// import Navbar from "./components/Navbar";
+// import Footer from "./components/Footer";
+// import Contact from "./components/Contact";
+// import Experiance from "./components/Experiance/Experiance";
+// import Skills from "./components/Skills";
+
+// High Performance
+
+const About = React.lazy(() => import('./components/About'));
+const Hero = React.lazy(() => import('./components/Hero'));
+const Navbar = React.lazy(() => import('./components/Navbar'));
+const Footer = React.lazy(() => import('./components/Footer'));
+const Contact = React.lazy(() => import('./components/Contact'));
+const Experiance = React.lazy(() => import('./components/Experiance/Experiance'));
+const Skills = React.lazy(() => import('./components/Skills'));
+
+
+
 
 function App() {
   useEffect(() => {

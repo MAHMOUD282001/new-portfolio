@@ -95,7 +95,7 @@ function Hero() {
                   overflow: "hidden",
                 }}
               >
-                <img src={meImg} alt="User Img" />
+                <img loading="lazy" src={meImg} alt="User Img" />
               </Box>
             </Box>
           </Box>

@@ -58,7 +58,6 @@ fieldset {
   border-color: #6b7170 !important;
 }
 
-
 /* Hero */
 
 .hero {
@@ -133,4 +132,3 @@ button.common-btn:active:before {
     transform: scale(1);
   }
 }
-

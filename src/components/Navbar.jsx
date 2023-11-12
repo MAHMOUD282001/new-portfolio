@@ -78,7 +78,7 @@ function Navbar({ setMode }) {
               window.scrollTo(0, 0);
             }}
           >
-            <img src={logo} alt="logo" />
+            <img loading="lazy" src={logo} alt="logo" />
           </Box>
 
           <Box sx={{ display: { sm: "flex", xs: "none" } }}>
