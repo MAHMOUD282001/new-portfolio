@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Comfortaa", sans-serif !important;
+  scroll-behavior: smooth;
+  direction: ltr;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f2a81d;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #050816;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.navbar ul {
+  display: flex;
+  align-items: center;
+  gap: 2;
+}
+
+li {
+  list-style: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar ul li:hover {
+  color: #f3f3f3 !important;
+}
+
+fieldset {
+  border-color: #6b7170 !important;
+}
+
+
+/* Hero */
+
+.hero {
+  background: url("./assets/herobg.webp");
+  height: 100dvh;
+  background-size: cover;
+  position: relative;
+}
+
+/* Button */
+
+button.common-btn {
+  --color: #8e4aac;
+  font-family: inherit;
+  display: inline-block;
+  padding: 10px 50px;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid var(--color);
+  transition: color 0.5s;
+  z-index: 1;
+  font-size: 17px;
+  border-radius: 6px;
+  font-weight: 500;
+  color: var(--color);
+  background-color: #fff;
+  cursor: pointer;
+}
+
+button.common-btn:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: var(--color);
+  height: 150px;
+  width: 500px;
+  border-radius: 50%;
+}
+
+button.common-btn:hover {
+  color: #fff;
+}
+
+button.common-btn:before {
+  top: 100%;
+  left: 100%;
+  transition: all 0.7s;
+}
+
+button.common-btn:hover:before {
+  top: -30px;
+  left: -30px;
+}
+
+button.common-btn:active:before {
+  background: #8e4aac;
+  transition: background 0s;
+  width: 100%;
+}
+
+/* Preloader */
+.preloader-logo {
+  transform: scale(0);
+  animation: preloader 1s ease 0.5s infinite alternate;
+}
+
+@keyframes preloader {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
