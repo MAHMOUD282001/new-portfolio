@@ -5,7 +5,6 @@ import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import { getDesignTokens } from "./theme";
 import { ThemeProvider } from "@mui/material/styles";
-import Design from "./components/Design";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect, useMemo, useState } from "react";
@@ -35,7 +34,6 @@ function App() {
         <Experiance />
         <Contact />
         <Footer />
-        {/* <Design /> */}
       </Box>
     </ThemeProvider>
   );
