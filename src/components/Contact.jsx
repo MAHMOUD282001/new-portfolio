@@ -183,7 +183,7 @@ function Contact() {
           </Grid>
           <Grid item xs={12} md={6} data-aos="fade-right">
             <Box sx={{ height: { md: "500px", xs: "350px" } }}>
-              <EarthCanvas />
+              {/* <EarthCanvas /> */}
             </Box>
           </Grid>
         </Grid>
