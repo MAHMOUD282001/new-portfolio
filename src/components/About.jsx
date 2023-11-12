@@ -1,11 +1,5 @@
 import { Box, Container, Grid, Typography, useTheme } from "@mui/material";
 import React from "react";
-import aboutAnimation from "../assets/AboutAnimation.json";
-
-import {
-  ChatBubbleOutlineOutlined,
-  VisibilityOutlined,
-} from "@mui/icons-material";
 import Typed from "react-typed";
 
 function About() {

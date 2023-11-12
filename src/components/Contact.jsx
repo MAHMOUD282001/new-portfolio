@@ -3,7 +3,6 @@ import { Box, Container, Grid, Typography, TextField } from "@mui/material";
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { toast } from "react-toastify";
-import contactAnimation from "../assets/contactAnimation.json";
 
 function Contact() {
   let theme = useTheme();
