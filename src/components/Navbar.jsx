@@ -100,6 +100,7 @@ function Navbar({ setMode }) {
               <Stack direction={"row"} style={{ marginLeft: "auto" }}>
                 {theme.palette.mode === "light" ? (
                   <IconButton
+                    aria-label={"Dark & Light Mode Icon"}
                     onClick={() => {
                       localStorage.setItem(
                         "currentMode",
@@ -115,6 +116,7 @@ function Navbar({ setMode }) {
                   </IconButton>
                 ) : (
                   <IconButton
+                    aria-label={"Dark & Light Mode Icon"}
                     onClick={() => {
                       localStorage.setItem(
                         "currentMode",
@@ -179,6 +181,7 @@ function Navbar({ setMode }) {
               <Stack direction={"row"}>
                 {theme.palette.mode === "light" ? (
                   <IconButton
+                    aria-label={"Dark & Light Mode Icon"}
                     onClick={() => {
                       localStorage.setItem(
                         "currentMode",
@@ -193,6 +196,7 @@ function Navbar({ setMode }) {
                   </IconButton>
                 ) : (
                   <IconButton
+                    aria-label={"Dark & Light Mode Icon"}
                     onClick={() => {
                       localStorage.setItem(
                         "currentMode",
