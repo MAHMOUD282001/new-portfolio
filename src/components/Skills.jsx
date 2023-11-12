@@ -93,7 +93,7 @@ function Skills() {
               data-aos="fade-up"
               data-aos-delay="200"
             >
-              <img loading="lazy" src={technology.icon} alt={technology.name} />
+              <img src={technology.icon} alt={technology.name} />
             </Box>
           ))}
         </Box>
