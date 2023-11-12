@@ -1,4 +1,3 @@
-import { useTheme } from "@emotion/react";
 import { GitHub, Link } from "@mui/icons-material";
 import {
   Button,
@@ -9,6 +8,7 @@ import {
   Grid,
   IconButton,
   Typography,
+  useTheme
 } from "@mui/material";
 import React from "react";
 
@@ -35,13 +35,13 @@ function ProjectCard({project, updateProjects}) {
           </Typography>
         </CardContent>
         <CardActions>
-          <IconButton>
+          <IconButton aria-label={project.title}>
             <Link
               sx={{ color: "#f2f2f2", fontSize: "25px" }}
             />
           </IconButton>
 
-          <IconButton>
+          <IconButton aria-label={project.title}>
             <GitHub
               sx={{ color: "#f2f2f2", fontSize: "25px" }}
             />

@@ -1,5 +1,11 @@
-import { useTheme } from "@emotion/react";
-import { Box, Container, Grid, Typography, TextField } from "@mui/material";
+import {
+  Box,
+  Container,
+  Grid,
+  Typography,
+  TextField,
+  useTheme
+} from "@mui/material";
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { toast } from "react-toastify";
@@ -164,9 +170,7 @@ function Contact() {
             </form>
           </Grid>
           <Grid item xs={12} md={6} data-aos="fade-right">
-            <Box sx={{ height: { md: "500px", xs: "350px" } }}>
-              
-            </Box>
+            <Box sx={{ height: { md: "500px", xs: "350px" } }}></Box>
           </Grid>
         </Grid>
       </Container>
