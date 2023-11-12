@@ -7,7 +7,6 @@ import {
   VisibilityOutlined,
 } from "@mui/icons-material";
 import Typed from "react-typed";
-import Lottie from "lottie-react";
 
 function About() {
   let theme = useTheme();
@@ -70,11 +69,7 @@ function About() {
                   height: { xs: "300px", md: "400px" },
                 }}
               >
-                <Lottie
-                  style={{ height: "100%" }}
-                  loop={true}
-                  animationData={aboutAnimation}
-                />
+              
               </Box>
             </Box>
           </Grid>
