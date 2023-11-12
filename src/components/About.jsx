@@ -70,7 +70,7 @@ function About() {
                   overflow: "hidden",
                 }}
               >
-                <img src={meImg} />
+                <img src={meImg} alt="User Img"/>
               </Box>
             </Box>
           </Grid>

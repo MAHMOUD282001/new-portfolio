@@ -95,7 +95,7 @@ function Hero() {
                   overflow: "hidden",
                 }}
               >
-                <img src={meImg} alt="Me" />
+                <img src={meImg} alt="User Img" />
               </Box>
             </Box>
           </Box>
