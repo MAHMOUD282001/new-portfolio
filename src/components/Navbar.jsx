@@ -1,7 +1,7 @@
 import { Container, IconButton, Stack, useTheme } from "@mui/material";
 import { Box } from "@mui/material";
 import { useEffect, useState } from "react";
-import logo from "../assets/logo.png";
+import logo from "../assets/logo.webp";
 import close from "../assets/close.svg";
 import menu from "../assets/menu.svg";
 import { DarkModeOutlined, LightModeOutlined } from "@mui/icons-material";

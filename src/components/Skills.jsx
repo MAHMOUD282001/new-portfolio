@@ -1,17 +1,17 @@
 import { Box, Container, Typography, useTheme } from "@mui/material";
 import React from "react";
-import html from "../assets/tech/html.png";
-import css from "../assets/tech/css.png";
-import js from "../assets/tech/javascript.png";
-import jquery from "../assets/tech/jquery.png";
-import bootstap from "../assets/tech/bootstrap.png";
-import ajax from "../assets/tech/ajax.png";
-import json from "../assets/tech/json.png";
-import react from "../assets/tech/reactjs.png";
-import redux from "../assets/tech/redux.png";
-import typeScript from "../assets/tech/typescript.png";
-import git from "../assets/tech/git.png";
-import materialUi from "../assets/tech/material-ui.png";
+import html from "../assets/tech/html.webp";
+import css from "../assets/tech/css.webp";
+import js from "../assets/tech/javascript.webp";
+import jquery from "../assets/tech/jquery.webp";
+import bootstap from "../assets/tech/bootstrap.webp";
+import ajax from "../assets/tech/ajax.webp";
+import json from "../assets/tech/json.webp";
+import react from "../assets/tech/reactjs.webp";
+import redux from "../assets/tech/redux.webp";
+import typeScript from "../assets/tech/typescript.webp";
+import git from "../assets/tech/git.webp";
+import materialUi from "../assets/tech/material-ui.webp";
 
 function Skills() {
   const theme = useTheme();

@@ -3,7 +3,7 @@ import { Container, Typography, useTheme } from "@mui/material";
 import { Box } from "@mui/material";
 import { useEffect, useState } from "react";
 import Typed from "react-typed";
-import meImg from "../assets/Me.png";
+import meImg from "../assets/Me.webp";
 
 function Hero() {
   let theme = useTheme();

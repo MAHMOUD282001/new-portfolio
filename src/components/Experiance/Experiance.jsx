@@ -2,7 +2,7 @@ import { Box, Container, Typography, useTheme } from "@mui/material";
 import { VerticalTimeline } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import ExperianceCard from "./ExperianceCard";
-import logo from "../../assets/logo.png";
+import logo from "../../assets/logo.webp";
 
 function Services() {
   let theme = useTheme();

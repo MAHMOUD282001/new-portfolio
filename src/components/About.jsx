@@ -1,6 +1,6 @@
 import { Box, Container, Grid, Typography, useTheme } from "@mui/material";
 import React from "react";
-import meImg from "../assets/Me.png";
+import meImg from "../assets/Me.webp";
 
 import {
   ChatBubbleOutlineOutlined,
