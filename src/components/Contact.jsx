@@ -4,6 +4,8 @@ import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { toast } from "react-toastify";
 import EarthCanvas from "./canvas/Earth";
+import Lottie from "lottie-react";
+import contactAnimation from "../assets/contactAnimation.json";
 
 function Contact() {
   let theme = useTheme();
@@ -109,13 +111,6 @@ function Contact() {
                 onChange={handleChange}
                 InputLabelProps={{
                   style: {
-                    color: theme.palette.fiftiary.main,
-                    direction: "rtl",
-                    textAlign: "right",
-                  },
-                }}
-                InputProps={{
-                  style: {
                     color: theme.palette.secondary.main,
                   },
                 }}
@@ -132,11 +127,6 @@ function Contact() {
                 value={form.email}
                 onChange={handleChange}
                 InputLabelProps={{
-                  style: {
-                    color: theme.palette.fiftiary.main,
-                  },
-                }}
-                InputProps={{
                   style: {
                     color: theme.palette.secondary.main,
                   },
@@ -156,11 +146,6 @@ function Contact() {
                 value={form.message}
                 onChange={handleChange}
                 InputLabelProps={{
-                  style: {
-                    color: theme.palette.fiftiary.main,
-                  },
-                }}
-                InputProps={{
                   style: {
                     color: theme.palette.secondary.main,
                   },
@@ -183,7 +168,11 @@ function Contact() {
           </Grid>
           <Grid item xs={12} md={6} data-aos="fade-right">
             <Box sx={{ height: { md: "500px", xs: "350px" } }}>
-              {/* <EarthCanvas /> */}
+              <Lottie
+                style={{ height: "100%" }}
+                loop={true}
+                animationData={contactAnimation}
+              />
             </Box>
           </Grid>
         </Grid>

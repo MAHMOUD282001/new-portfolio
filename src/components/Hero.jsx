@@ -87,7 +87,7 @@ function Hero() {
                   width: { xs: "250px", md: "400px" },
                   height: { xs: "250px", md: "400px" },
                   mt: { xs: "20px", md: "0" },
-                  background: theme.palette.fourtiary.main,
+                  background: theme.palette.tertiary.main,
                   borderRadius: "30% 70% 70% 30% / 30% 30% 70% 70% ",
                   display: "flex",
                   alignItems: "center",

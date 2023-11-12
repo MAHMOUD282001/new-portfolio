@@ -18,22 +18,6 @@ function ServicesCard({ experience }) {
       iconStyle={{
         background: theme.palette.fourtiary.main,
       }}
-      icon={
-        <Box
-          sx={{
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            height: "100%",
-          }}
-        >
-          <img
-            src={experience.icon}
-            alt={experience.title}
-            style={{ width: "60%", height: "60%" }}
-          />
-        </Box>
-      }
     >
       <div>
         <Typography variant="sectionSubText" sx={{ mb: 2 }}>

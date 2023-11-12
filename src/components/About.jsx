@@ -1,12 +1,13 @@
 import { Box, Container, Grid, Typography, useTheme } from "@mui/material";
 import React from "react";
-import meImg from "../assets/Me.webp";
+import aboutAnimation from "../assets/AboutAnimation.json";
 
 import {
   ChatBubbleOutlineOutlined,
   VisibilityOutlined,
 } from "@mui/icons-material";
 import Typed from "react-typed";
+import Lottie from "lottie-react";
 
 function About() {
   let theme = useTheme();
@@ -57,20 +58,23 @@ function About() {
             </Box>
           </Grid>
           <Grid item xs={12} md={6} data-aos="fade-left">
-            <Box sx={{display: "flex", justifyContent: {md: "flex-end", xs: "center"}}}>
+            <Box
+              sx={{
+                display: "flex",
+                justifyContent: { md: "flex-end", xs: "center" },
+              }}
+            >
               <Box
                 sx={{
                   width: { xs: "300px", md: "400px" },
                   height: { xs: "300px", md: "400px" },
-                  background: "#FF0099",
-                  borderRadius: "30% 70% 70% 30% / 30% 30% 70% 70% ",
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  overflow: "hidden",
                 }}
               >
-                <img src={meImg} alt="User Img"/>
+                <Lottie
+                  style={{ height: "100%" }}
+                  loop={true}
+                  animationData={aboutAnimation}
+                />
               </Box>
             </Box>
           </Grid>

@@ -72,7 +72,7 @@ export const getDesignTokens = (mode) => ({
       xs: 0,
       sm: 700,
       md: 1000,
-      lg: 1300,
+      lg: 1400,
       xl: 1600,
     },
   },
@@ -88,16 +88,10 @@ export const getDesignTokens = (mode) => ({
             main: "#fefefe",
           },
           tertiary: {
-            main: "#0305EF",
+            main: "#8754AF",
           },
           fourtiary: {
-            main: "#8e4aac",
-          },
-          fiftiary: {
-            main: "#5b6eb4",
-          },
-          sixtiary: {
-            main: "#a7b4da",
+            main: "#58B787",
           },
         }
       : {
@@ -108,16 +102,10 @@ export const getDesignTokens = (mode) => ({
             main: "#050816",
           },
           tertiary: {
-            main: "#0305EF",
+            main: "#8754AF",
           },
           fourtiary: {
-            main: "#8e4aac",
-          },
-          fiftiary: {
-            main: "#5b6eb4",
-          },
-          sixtiary: {
-            main: "#a7b4da",
+            main: "#58B787",
           },
         }),
   },
