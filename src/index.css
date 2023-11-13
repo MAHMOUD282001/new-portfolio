@@ -28,45 +28,6 @@ body {
   background: #8754af;
 }
 
-img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-.navbar ul {
-  display: flex;
-  align-items: center;
-  gap: 2;
-}
-
-li {
-  list-style: none;
-  transition: all 0.3s ease-in-out;
-}
-
-.navbar ul li:hover {
-  color: #f3f3f3 !important;
-}
-
-fieldset {
-  border-color: #6b7170 !important;
-}
-
-/* Hero */
-
-.hero {
-  background: url("./assets/herobg.webp");
-  height: 100dvh;
-  background-size: cover;
-  position: relative;
-}
-
 /* Button */
 
 button.common-btn {
@@ -123,6 +84,60 @@ button.common-btn.active {
   transition: background 0s;
   width: 100%;
   color: #f2f2f2;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.navbar ul {
+  display: flex;
+  align-items: center;
+  gap: 2;
+}
+
+li {
+  list-style: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar ul li:hover {
+  color: #f3f3f3 !important;
+}
+
+fieldset {
+  border-color: #6b7170 !important;
+}
+
+/* Hero */
+
+.hero {
+  background: url("./assets/herobg.webp");
+  height: 100dvh;
+  background-size: cover;
+  position: relative;
+}
+
+/* About */
+
+.about-img {
+  animation: animateAbout 2s linear 2s infinite alternate;
+}
+
+@keyframes animateAbout {
+  0% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
 }
 
 /* Time Line */

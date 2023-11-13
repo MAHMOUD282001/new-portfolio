@@ -1,6 +1,7 @@
 import { Box, Container, Grid, Typography, useTheme } from "@mui/material";
 import React from "react";
 import Typed from "react-typed";
+import aboutMe from "../assets/about.svg";
 
 function About() {
   let theme = useTheme();
@@ -63,7 +64,12 @@ function About() {
                   height: { xs: "300px", md: "400px" },
                 }}
               >
-              
+                <img
+                  src={aboutMe}
+                  alt="About"
+                  style={{ objectFit: "contain" }}
+                  className="about-img"
+                />
               </Box>
             </Box>
           </Grid>

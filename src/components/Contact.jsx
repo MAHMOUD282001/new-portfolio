@@ -9,6 +9,7 @@ import {
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { toast } from "react-toastify";
+import EarthCanvas from "./canvas/Earth";
 
 function Contact() {
   let theme = useTheme();
@@ -84,7 +85,7 @@ function Contact() {
             flexDirection: { md: "row", xs: "column-reverse" },
           }}
         >
-          <Grid item xs={12} md={5} data-aos="fade-left">
+          <Grid item xs={12} md={5} data-aos="fade-right">
             <Box
               sx={{
                 display: "flex",
@@ -169,8 +170,10 @@ function Contact() {
               </Box>
             </form>
           </Grid>
-          <Grid item xs={12} md={6} data-aos="fade-right">
-            <Box sx={{ height: { md: "500px", xs: "350px" } }}></Box>
+          <Grid item xs={12} md={6} data-aos="fade-left">
+            <Box sx={{ height: { md: "500px", xs: "350px" } }}>
+              <EarthCanvas />
+            </Box>
           </Grid>
         </Grid>
       </Container>
